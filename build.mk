@@ -6,7 +6,7 @@ READELF = $(PREFIX)-readelf
 OBJDUMP = $(PREFIX)-objdump
 NM = $(PREFIX)-nm
 
-FLAGS = -Os -mabi=ilp32e -nostdlib -ffreestanding -Wall -Wl,-Map,$(TARGET).map
+FLAGS = -Os -mabi=ilp32 -nostdlib -ffreestanding -Wall -Wl,-Map,$(TARGET).map
 
 all: $(TARGET).elf
 
