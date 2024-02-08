@@ -16,6 +16,9 @@ a lot of time).
 oscillator. However, the PLL can increase this frequency up to 18 times, giving a 144MHz clock. By default, the PLL uses half of the HSI frequency. To get full 144MHz
 you need to configure the extended configuration register, documented in chapter 33 of the reference manual.
 
+6. ch32v203 has a QingKeV4 processor instead of QingKeV2. It has, for example, more registers, and also instructions for integer multiplication and division. Therefore, we use -march=imac (or ima if we
+want to avoid compressed instructions, or imac_zicsr).
+
 ### Remarks
 
 The following documentation has been used, in addition to the ones mentioned in the ch32v003-minimal repository:

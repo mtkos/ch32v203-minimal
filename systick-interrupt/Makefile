@@ -5,5 +5,5 @@ SRC += startup.s
 
 include ../build.mk
 
-FLAGS += -march=rv32e_zicsr
+FLAGS += -march=rv32ima_zicsr
 FLAGS += -Wl,-T../ld/Link.ld

@@ -19,8 +19,8 @@
 #define   CCER 0x20
 #define     CC3E 1<<8
 #define   CNT 0x24
-#define   ATRLR 0x2c
 #define   PSC 0x28
+#define   ATRLR 0x2c
 #define   CH3CVR 0x3c
 #define   BDTR 0x44
 #define     MOE 1<<15
