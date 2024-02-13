@@ -7,6 +7,8 @@
 #define     HPRE_DIV1 0
 #define     PLL_MUL18 (0b1111 << 18)
 #define     SW_PLL 0x2
+#define   AHBPCENR 0x14
+#define     DMA1EN 1<<0
 #define   APB2PCENR 0x18
 #define     USART1EN 1<<14
 #define     TIM1EN 1<<11
@@ -15,4 +17,5 @@
 #define     IOPBEN 1<<3
 #define     IOPAEN 1<<2
 #define     AFIOEN 1<<0
-
+#define   APB1PCENR 0x1c
+#define     TIM2EN 1<<0

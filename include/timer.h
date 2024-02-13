@@ -1,8 +1,10 @@
+#define TIM2 0x40000000
 #define TIM1 0x40012C00
 #define   CTLR1 0x0
 #define     ARPE 1<<7
 #define     CEN 1<<0
 #define   DMAINTENR 0xc
+#define     UDE 1<<8
 #define     CC4IE 1<<4
 #define     CC3IE 1<<3
 #define     CC2IE 1<<2
