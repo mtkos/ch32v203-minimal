@@ -24,6 +24,7 @@ void prog(){
 
     REG(GPIOB + CFGLR) &= Clear(PIN1);
     REG(GPIOB + CFGLR) |= Input_PUPD(PIN1);
+    REG(GPIOB + OUTDR) = Pin(PIN1);
 
     REG(GPIOB + CFGLR) &= Clear(PIN2);
     REG(GPIOB + CFGLR) |= Output_PP_2MHz(PIN2);
