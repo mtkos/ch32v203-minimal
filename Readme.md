@@ -19,6 +19,9 @@ you need to configure the extended configuration register, documented in chapter
 6. ch32v203 has a QingKeV4 processor instead of QingKeV2. It has, for example, more registers, and also instructions for integer multiplication and division. Therefore, we use -march=imac (or ima if we
 want to avoid compressed instructions, or imac_zicsr).
 
+7. ch32v203 has a USB peripheral, whereas ch32v003 has not. I have added 3 programs using it. They are, in order of increasing complexity: usb-hw, usb-minimal and usb-kbd. For explanations I
+refer to my stm32f103-minimal repository. ch32v203's USB full-speed peripheral is almost entirely similar to that of stm32f103.
+
 ### Remarks
 
 The following documentation has been used, in addition to the ones mentioned in the ch32v003-minimal repository:

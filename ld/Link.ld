@@ -32,6 +32,7 @@ SECTIONS{
 
     .data :{
       . = ALIGN(4);
+      _global_ptr = . + 0x800;
       *(.data .data.*)
       *(.sdata .sdata.*)
       . = ALIGN(4);
